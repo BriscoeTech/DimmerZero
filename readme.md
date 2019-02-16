@@ -25,34 +25,34 @@ if you change frequency or invert output, you should do it for **all** pins on s
 Create a PWM_SamD21 object and initialize it with your desired pwm settings 
 
 demo a fast pwm channel
-PWM_SamD21 pwm38khz(2, 38000, false);
-PWM_SamD21 pwm56khz(5, 56000, false);
+PWM_SamD21 pwm38khz(2, 38000, false)
+PWM_SamD21 pwm56khz(5, 56000, false)
 
 set as non inverting
-PWM_SamD21 pwmA(4,  1000, false);
-PWM_SamD21 pwmB(3,  1000, false);
+PWM_SamD21 pwmA(4,  1000, false)
+PWM_SamD21 pwmB(3,  1000, false)
 
 setup as inverting
-PWM_SamD21 pwmC(11, 1000, true);
-PWM_SamD21 pwmD(13, 1000, true);
+PWM_SamD21 pwmC(11, 1000, true)
+PWM_SamD21 pwmD(13, 1000, true)
 
 
 ************************************************************************************
 demonstrate different ways to set the duty cycle and control the output
    
-pwmA.setValue(pwmA.getMaxValue() / 4);  //set non-inverted channels, 1/4 duty cycle
-pwmB.setDutyCycle(0.25);                //set non-inverted channels, 1/4 duty cycle
+pwmA.setValue(pwmA.getMaxValue() / 4)    set non-inverted channels, 1/4 duty cycle
+pwmB.setDutyCycle(0.25)                  set non-inverted channels, 1/4 duty cycle
 
-pwmC.setValue(pwmC.getMaxValue() / 4);  //set inverted channels, 3/4 duty cycle
-pwmD.setDutyCycle(0.25);                //set inverted channels, 3/4 duty cycle
+pwmC.setValue(pwmC.getMaxValue() / 4)    set inverted channels, 3/4 duty cycle
+pwmD.setDutyCycle(0.25)                  set inverted channels, 3/4 duty cycle
 
 set to 50 percent duty cycle
-pwm38khz.setDutyCycle(0.50);
-pwm56khz.setDutyCycle(0.50);
+pwm38khz.setDutyCycle(0.50)
+pwm56khz.setDutyCycle(0.50)
 
 turn off the pwm channels
-pwmA.setOff();
-pwmD.setOff();
+pwmA.setOff()
+pwmD.setOff()
 
 
 
