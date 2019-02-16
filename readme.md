@@ -25,15 +25,15 @@ if you change frequency or invert output, you should do it for **all** pins on s
 
 ####Create a PWM_SamD21 object and initialize it with your desired pwm settings <br/>
 <br/>
-demo a fast pwm channel <br/>
+#####setup a fast pwm channel <br/>
 PWM_SamD21 pwm38khz(2, 38000, false);<br/>
 PWM_SamD21 pwm56khz(5, 56000, false);<br/>
 <br/>
-set as non inverting<br/>
+#####setup as non inverting<br/>
 PWM_SamD21 pwmA(4,  1000, false);<br/>
 PWM_SamD21 pwmB(3,  1000, false);<br/>
 <br/>
-setup as inverting<br/>
+#####setup as inverting<br/>
 PWM_SamD21 pwmC(11, 1000, true);<br/>
 PWM_SamD21 pwmD(13, 1000, true);<br/>
 
@@ -47,11 +47,11 @@ pwmB.setDutyCycle(0.25)                  set non-inverted channels, 1/4 duty cyc
 pwmC.setValue(pwmC.getMaxValue() / 4)    set inverted channels, 3/4 duty cycle <br/>
 pwmD.setDutyCycle(0.25)                  set inverted channels, 3/4 duty cycle <br/>
 <br/>
-set to 50 percent duty cycle <br/>
+#####set to 50 percent duty cycle <br/>
 pwm38khz.setDutyCycle(0.50) <br/>
 pwm56khz.setDutyCycle(0.50) <br/>
 <br/>
-turn off the pwm channels <br/>
+#####turn off the pwm channels <br/>
 pwmA.setOff() <br/>
 pwmD.setOff() <br/>
 
