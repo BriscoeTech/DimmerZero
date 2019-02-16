@@ -53,7 +53,7 @@ pwm38khz.setDutyCycle(0.50);
 pwm56khz.setDutyCycle(0.50);  
 
 ##### turn off the pwm channels
-pwmA.setOff();
+pwmA.setOff();  
 pwmD.setOff();
 
 
