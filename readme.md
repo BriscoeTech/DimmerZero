@@ -23,7 +23,7 @@ if you change frequency or invert output, you should do it for **all** pins on s
 
 ************************************************************************************
 
-Create a PWM_SamD21 object and initialize it with your desired pwm settings <br/>
+####Create a PWM_SamD21 object and initialize it with your desired pwm settings <br/>
 <br/>
 demo a fast pwm channel <br/>
 PWM_SamD21 pwm38khz(2, 38000, false);<br/>
@@ -39,7 +39,7 @@ PWM_SamD21 pwmD(13, 1000, true);<br/>
 
 ************************************************************************************
 
-demonstrate different ways to set the duty cycle and control the output<br/>
+#####demonstrate different ways to set the duty cycle and control the output<br/>
 <br/>
 pwmA.setValue(pwmA.getMaxValue() / 4)    set non-inverted channels, 1/4 duty cycle <br/>
 pwmB.setDutyCycle(0.25)                  set non-inverted channels, 1/4 duty cycle <br/>
